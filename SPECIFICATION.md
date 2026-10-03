@@ -1,33 +1,11 @@
 # Matching game specification
-Create a game for seniors - matching fruits
-10 pairs of fruits - 20 cards on screen with face down
 
-Player can pick two cards. He can randomly picks the first card - fruit reveals,  then picks the second one - fruit reveals
-If two cards match, a pop-up message "Matched"
-These two cards may either disappear from the screen, or still appears on the screen but frozon
+Create a game that allows the user to match cards. There are 20 cards on the game board, face down. Players can pick two cards, one at a time. As they pick, the card is revealed. If the cards match, remove the cards, assign a point, and display a message. If they do not match, flip them back over.
 
-Second player will randomly pick his first card - card reveals, then picks the second card - card reveals
-If the two cards doesn't match, a pop-up message "Try Again"
-The two cards will turn face down
+When no cards are left, the game is over. Tally the scores and display a scoreboard.
 
-Conditions:
-Players can randomly pick their cards
+When the game starts, ask for the number of players. Players take turns. Provide a settings, where one of the settings is whether a player cointinues if they have a match. the default is "next player even if current player made a match."
 
+# Tech stack
 
-When all cards matched, change to the second round of the games.
-
-Round one - Fruits
-Round two - Flowers
-Round three - Animals
-Round four - Flowers
-Round five - Fruits
-Round six - Stationeries
-Round seven - household utensils etc
-
-
-Can the cards within each round of game shoveled? But still find matches.
-if building 7 rounds of the game, can the rounds be shoveled
-
-If can build in some background music, will be much better
-
-
+Create a local HTML page with Javascript. Animate the cards as they display on the screen, as they flip over, and as they are removed.

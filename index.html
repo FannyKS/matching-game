@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Matching Game</h1>
+            <div id="game-info">
+                <div id="players-info"></div>
+                <div id="current-player"></div>
+                <button id="new-game-btn">New Game</button>
+                <button id="settings-btn">Settings</button>
+            </div>
+        </header>
+        <div id="message" class="message"></div>
+        <div id="game-board" class="game-board"></div>
+        <div id="scoreboard" class="scoreboard hidden"></div>
+    </div>
+
+    <!-- Player Setup Modal -->
+    <div id="player-setup-modal" class="modal">
+        <div class="modal-content">
+            <h2>New Game</h2>
+            <form id="player-setup-form">
+                <label for="num-players">Number of Players:</label>
+                <input type="number" id="num-players" min="1" max="4" value="1" required>
+                <button type="submit">Start Game</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <h2>Settings</h2>
+            <form id="settings-form">
+                <div class="setting-item">
+                    <label for="continue-on-match">
+                        <input type="checkbox" id="continue-on-match">
+                        Player continues if they make a match
+                    </label>
+                    <p class="setting-description">Default: Next player even if current player made a match (unchecked)</p>
+                </div>
+                <button type="submit">Save Settings</button>
+                <button type="button" id="close-settings">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
