@@ -160,17 +160,29 @@ class MatchingGame {
             this.gameBoard.appendChild(cardElement);
             
             // Animate card appearance
-            // Skip animation for debugging
-            // setTimeout(() => {
-            //     cardElement.style.animation = 'cardAppear 0.3s ease forwards';
-            //     setTimeout(() => {
-            //         cardElement.style.animation = '';
-            //     }, 300);
-            // }, index * 50);
+            setTimeout(() => {
+                cardElement.style.animation = 'cardAppear 0.3s ease forwards';
+                setTimeout(() => {
+                    cardElement.style.animation = '';
+                }, 300);
+            }, index * 50);
         });
         
         // Add appear animation
-        // Skip animation style for debugging
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes cardAppear {
+                0% {
+                    transform: scale(0) rotateY(0deg);
+                    opacity: 0;
+                }
+                100% {
+                    transform: scale(1) rotateY(0deg);
+                    opacity: 1;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     }
     
     flipCard(cardId) {
