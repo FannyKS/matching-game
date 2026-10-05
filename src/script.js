@@ -103,6 +103,7 @@ class MatchingGame {
     startGame() {
         this.hidePlayerSetup();
         this.gameOver = false;
+        this.canFlip = true;
         this.flippedCards = [];
         this.matchedCards = [];
         this.cards = [];
