@@ -109,6 +109,7 @@ class MatchingGame {
         this.scoreboard.classList.add('hidden');
         this.createCards();
         this.shuffleCards();
+        this.assignDisplayNumbers();
         this.renderBoard();
         this.updateDisplay();
         this.showMessage(`${this.getCurrentPlayer().name}'s turn`);
@@ -146,6 +147,12 @@ class MatchingGame {
         }
     }
     
+    assignDisplayNumbers() {
+        for (let i = 0; i < this.cards.length; i++) {
+            this.cards[i].displayNumber = i + 1;
+        }
+    }
+    
     renderBoard() {
         this.gameBoard.innerHTML = '';
         this.cards.forEach((card, index) => {
@@ -153,7 +160,7 @@ class MatchingGame {
             cardElement.className = 'card';
             cardElement.dataset.cardId = card.id;
             cardElement.innerHTML = `
-                <div class="card-face card-back">?</div>
+                <div class="card-face card-back">${card.displayNumber || card.number}</div>
                 <div class="card-face card-front">${card.symbol}</div>
             `;
             cardElement.addEventListener('click', () => this.flipCard(card.id));
