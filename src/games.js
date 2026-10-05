@@ -5,23 +5,83 @@ window.GAMES = [
     {
         "id": "Animals",
         "name": "Animals",
-        "pairCount": 2,
+        "pairCount": 9,
         "images": [
             {
-                "src": "Image%20Resources/Animals/Apple.jpg",
-                "label": "Apple"
+                "src": "Image%20Resources/Animals/Bull.webp",
+                "label": "Bull"
             },
             {
-                "src": "Image%20Resources/Animals/Banana.png",
-                "label": "Banana"
+                "src": "Image%20Resources/Animals/Bunny.jpg",
+                "label": "Bunny"
             },
             {
-                "src": "Image%20Resources/Animals/Hibiscus.jpeg",
-                "label": "Hibiscus"
+                "src": "Image%20Resources/Animals/Camel.jpg.webp",
+                "label": "Camel"
             },
             {
-                "src": "Image%20Resources/Animals/lobelia-cardinalis-431547.jpg.webp",
-                "label": "lobelia-cardinalis-431547"
+                "src": "Image%20Resources/Animals/Cow.webp",
+                "label": "Cow"
+            },
+            {
+                "src": "Image%20Resources/Animals/Deer.webp",
+                "label": "Deer"
+            },
+            {
+                "src": "Image%20Resources/Animals/Dog1.webp",
+                "label": "Dog1"
+            },
+            {
+                "src": "Image%20Resources/Animals/Elephant.webp",
+                "label": "Elephant"
+            },
+            {
+                "src": "Image%20Resources/Animals/horse.jpg",
+                "label": "horse"
+            },
+            {
+                "src": "Image%20Resources/Animals/Jaguar.webp",
+                "label": "Jaguar"
+            },
+            {
+                "src": "Image%20Resources/Animals/Moiuntain%20Goa.jpg",
+                "label": "Moiuntain Goa"
+            },
+            {
+                "src": "Image%20Resources/Animals/Monkey.webp",
+                "label": "Monkey"
+            },
+            {
+                "src": "Image%20Resources/Animals/Owl.webp",
+                "label": "Owl"
+            },
+            {
+                "src": "Image%20Resources/Animals/Penguin.webp",
+                "label": "Penguin"
+            },
+            {
+                "src": "Image%20Resources/Animals/Polar%20Bear.jpg",
+                "label": "Polar Bear"
+            },
+            {
+                "src": "Image%20Resources/Animals/Rabbit.webp",
+                "label": "Rabbit"
+            },
+            {
+                "src": "Image%20Resources/Animals/Shjeep.webp",
+                "label": "Shjeep"
+            },
+            {
+                "src": "Image%20Resources/Animals/Tiger.webp",
+                "label": "Tiger"
+            },
+            {
+                "src": "Image%20Resources/Animals/Wolf.jpg",
+                "label": "Wolf"
+            },
+            {
+                "src": "Image%20Resources/Animals/Zebra.jpg",
+                "label": "Zebra"
             }
         ]
     },
@@ -289,7 +349,136 @@ window.GAMES = [
     {
         "id": "Travel",
         "name": "Travel",
-        "pairCount": 0,
-        "images": []
+        "pairCount": 16,
+        "images": [
+            {
+                "src": "Image%20Resources/Travel/Argentina.avif",
+                "label": "Argentina"
+            },
+            {
+                "src": "Image%20Resources/Travel/Brazil.avif",
+                "label": "Brazil"
+            },
+            {
+                "src": "Image%20Resources/Travel/Canada.avif",
+                "label": "Canada"
+            },
+            {
+                "src": "Image%20Resources/Travel/Chile.avif",
+                "label": "Chile"
+            },
+            {
+                "src": "Image%20Resources/Travel/China.avif",
+                "label": "China"
+            },
+            {
+                "src": "Image%20Resources/Travel/Colombia.avif",
+                "label": "Colombia"
+            },
+            {
+                "src": "Image%20Resources/Travel/Costa%20Rica.avif",
+                "label": "Costa Rica"
+            },
+            {
+                "src": "Image%20Resources/Travel/Croatia.avif",
+                "label": "Croatia"
+            },
+            {
+                "src": "Image%20Resources/Travel/Great%20Wall.jpg",
+                "label": "Great Wall"
+            },
+            {
+                "src": "Image%20Resources/Travel/Greece.avif",
+                "label": "Greece"
+            },
+            {
+                "src": "Image%20Resources/Travel/Iceland.avif",
+                "label": "Iceland"
+            },
+            {
+                "src": "Image%20Resources/Travel/India.avif",
+                "label": "India"
+            },
+            {
+                "src": "Image%20Resources/Travel/Indonesia.avif",
+                "label": "Indonesia"
+            },
+            {
+                "src": "Image%20Resources/Travel/Italy.avif",
+                "label": "Italy"
+            },
+            {
+                "src": "Image%20Resources/Travel/Japan.avif",
+                "label": "Japan"
+            },
+            {
+                "src": "Image%20Resources/Travel/Kenya.avif",
+                "label": "Kenya"
+            },
+            {
+                "src": "Image%20Resources/Travel/London.avif",
+                "label": "London"
+            },
+            {
+                "src": "Image%20Resources/Travel/Madagascar.avif",
+                "label": "Madagascar"
+            },
+            {
+                "src": "Image%20Resources/Travel/Mexico.avif",
+                "label": "Mexico"
+            },
+            {
+                "src": "Image%20Resources/Travel/Morocco.avif",
+                "label": "Morocco"
+            },
+            {
+                "src": "Image%20Resources/Travel/Nepal.avif",
+                "label": "Nepal"
+            },
+            {
+                "src": "Image%20Resources/Travel/New%20Zeland.avif",
+                "label": "New Zeland"
+            },
+            {
+                "src": "Image%20Resources/Travel/Norway.avif",
+                "label": "Norway"
+            },
+            {
+                "src": "Image%20Resources/Travel/Peru.avif",
+                "label": "Peru"
+            },
+            {
+                "src": "Image%20Resources/Travel/Philippines.avif",
+                "label": "Philippines"
+            },
+            {
+                "src": "Image%20Resources/Travel/Portugal.avif",
+                "label": "Portugal"
+            },
+            {
+                "src": "Image%20Resources/Travel/Sweden.avif",
+                "label": "Sweden"
+            },
+            {
+                "src": "Image%20Resources/Travel/Switzerland.avif",
+                "label": "Switzerland"
+            },
+            {
+                "src": "Image%20Resources/Travel/sydney.jpeg",
+                "label": "sydney"
+            },
+            {
+                "src": "Image%20Resources/Travel/Thailand.avif",
+                "label": "Thailand"
+            },
+            {
+                "src": "Image%20Resources/Travel/Turkey.avif",
+                "label": "Turkey"
+            },
+            {
+                "src": "Image%20Resources/Travel/Vietnam.avif",
+                "label": "Vietnam"
+            }
+        ]
     }
 ];
