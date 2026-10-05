@@ -5,7 +5,7 @@ window.GAMES = [
     {
         "id": "Animals",
         "name": "Animals",
-        "pairCount": 9,
+        "pairCount": 10,
         "images": [
             {
                 "src": "Image%20Resources/Animals/Bull.webp",
@@ -72,7 +72,11 @@ window.GAMES = [
                 "label": "Shjeep"
             },
             {
-                "src": "Image%20Resources/Animals/Tiger.webp",
+                "src": "Image%20Resources/Animals/Tiger%20-%201.webp",
+                "label": "Tiger - 1"
+            },
+            {
+                "src": "Image%20Resources/Animals/Tiger.jpeg",
                 "label": "Tiger"
             },
             {
@@ -88,106 +92,178 @@ window.GAMES = [
     {
         "id": "Flowers",
         "name": "Flowers",
-        "pairCount": 10,
+        "pairCount": 18,
         "images": [
             {
-                "src": "Image%20Resources/Flowers/blossoming-orange-pot-marigold-flower-isolated-16334687.jpg.webp",
-                "label": "blossoming-orange-pot-marigold-flower-isolated-16334687"
+                "src": "Image%20Resources/Flowers/Amaranth.jpg",
+                "label": "Amaranth"
             },
             {
-                "src": "Image%20Resources/Flowers/blue-cornflower-flower-head-centaurea-cyanus-16453007.jpg.webp",
-                "label": "blue-cornflower-flower-head-centaurea-cyanus-16453007"
+                "src": "Image%20Resources/Flowers/Anemone.jpg",
+                "label": "Anemone"
             },
             {
-                "src": "Image%20Resources/Flowers/dandelion-flower-dphotography.jpg.webp",
-                "label": "dandelion-flower-dphotography"
+                "src": "Image%20Resources/Flowers/Bergamot.jpg",
+                "label": "Bergamot"
             },
             {
-                "src": "Image%20Resources/Flowers/dandelion-seed-flying-away-2262744.jpg.webp",
-                "label": "dandelion-seed-flying-away-2262744"
+                "src": "Image%20Resources/Flowers/blossoming-orange-pot-marigold.jpg.webp",
+                "label": "blossoming-orange-pot-marigold"
+            },
+            {
+                "src": "Image%20Resources/Flowers/blue-cornflower-flower-head-centaurea-cyan.jpg.webp",
+                "label": "blue-cornflower-flower-head-centaurea-cyan"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Chrysanthemum.jpg",
+                "label": "Chrysanthemum"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Craspedia.jpg",
+                "label": "Craspedia"
+            },
+            {
+                "src": "Image%20Resources/Flowers/dandelion-flower.jpg.webp",
+                "label": "dandelion-flower"
+            },
+            {
+                "src": "Image%20Resources/Flowers/dandelion-seed.jpg.webp",
+                "label": "dandelion-seed"
             },
             {
                 "src": "Image%20Resources/Flowers/Delphinium.jpeg",
                 "label": "Delphinium"
             },
             {
-                "src": "Image%20Resources/Flowers/frangipani-plumeria-flower-5201524.jpg.webp",
-                "label": "frangipani-plumeria-flower-5201524"
+                "src": "Image%20Resources/Flowers/frangipani-plumeri.jpg.webp",
+                "label": "frangipani-plumeri"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Gladiolus.jpg",
+                "label": "Gladiolus"
             },
             {
                 "src": "Image%20Resources/Flowers/Hibiscus.jpeg",
                 "label": "Hibiscus"
             },
             {
-                "src": "Image%20Resources/Flowers/lobelia-cardinalis-431547.jpg.webp",
-                "label": "lobelia-cardinalis-431547"
+                "src": "Image%20Resources/Flowers/Larkspur.jpg",
+                "label": "Larkspur"
             },
             {
-                "src": "Image%20Resources/Flowers/lotus-flower-8341397.jpg.webp",
-                "label": "lotus-flower-8341397"
+                "src": "Image%20Resources/Flowers/Linden.jpg.webp",
+                "label": "Linden"
             },
             {
-                "src": "Image%20Resources/Flowers/lotus-flower-isolated-white-background-39241417.jpg.webp",
-                "label": "lotus-flower-isolated-white-background-39241417"
+                "src": "Image%20Resources/Flowers/lobelia-cardinalis.jpg.webp",
+                "label": "lobelia-cardinalis"
             },
             {
-                "src": "Image%20Resources/Flowers/mauve-flower-composition-1-690383.jpg.webp",
-                "label": "mauve-flower-composition-1-690383"
+                "src": "Image%20Resources/Flowers/lotus-flower%20-%201.jpg.webp",
+                "label": "lotus-flower - 1"
             },
             {
-                "src": "Image%20Resources/Flowers/orange-color-hibiscus-flower-green-leaves-isolated-white-background-path-orange-color-hibiscus-flower-green-leaves-123652458.jpg.webp",
-                "label": "orange-color-hibiscus-flower-green-leaves-isolated-white-background-path-orange-color-hibiscus-flower-green-leaves-123652458"
+                "src": "Image%20Resources/Flowers/lotus-flower.jpg.webp",
+                "label": "lotus-flower"
+            },
+            {
+                "src": "Image%20Resources/Flowers/mauve.jpg.webp",
+                "label": "mauve"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Mums.jpg",
+                "label": "Mums"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Nigella.jpg",
+                "label": "Nigella"
+            },
+            {
+                "src": "Image%20Resources/Flowers/orange.jpg.webp",
+                "label": "orange"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Orchid.jpg.webp",
+                "label": "Orchid"
             },
             {
                 "src": "Image%20Resources/Flowers/Pink%20Cherry%20blossom.jpeg",
                 "label": "Pink Cherry blossom"
             },
             {
-                "src": "Image%20Resources/Flowers/pink-flower-233395.jpg.webp",
-                "label": "pink-flower-233395"
+                "src": "Image%20Resources/Flowers/pink-flower.jpg.webp",
+                "label": "pink-flower"
             },
             {
-                "src": "Image%20Resources/Flowers/pink-lotus-flower-10683674.jpg.webp",
-                "label": "pink-lotus-flower-10683674"
+                "src": "Image%20Resources/Flowers/pink-lotus.jpg.webp",
+                "label": "pink-lotus"
             },
             {
-                "src": "Image%20Resources/Flowers/poppy-flower-single-isolated-over-white-background-42630685.jpg.webp",
-                "label": "poppy-flower-single-isolated-over-white-background-42630685"
+                "src": "Image%20Resources/Flowers/poppy%20-%201.jpg.webp",
+                "label": "poppy - 1"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Poppy.jpeg",
+                "label": "Poppy"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Ranunculus.jpg",
+                "label": "Ranunculus"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Rose%20-%201.jpeg",
+                "label": "Rose - 1"
             },
             {
                 "src": "Image%20Resources/Flowers/Rose.jpeg",
                 "label": "Rose"
             },
             {
-                "src": "Image%20Resources/Flowers/single-orchid-flower-floral-background-neutral-39703045.jpg.webp",
-                "label": "single-orchid-flower-floral-background-neutral-39703045"
+                "src": "Image%20Resources/Flowers/Snapdragon.jpg",
+                "label": "Snapdragon"
             },
             {
                 "src": "Image%20Resources/Flowers/sun%20flower.jpeg",
                 "label": "sun flower"
             },
             {
-                "src": "Image%20Resources/Flowers/yellow-linden-flower-25182579.jpg.webp",
-                "label": "yellow-linden-flower-25182579"
+                "src": "Image%20Resources/Flowers/Zinnia-%201.jpeg",
+                "label": "Zinnia- 1"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Zinnia-%202.jpg",
+                "label": "Zinnia- 2"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Zinnia.jpeg",
+                "label": "Zinnia"
             }
         ]
     },
     {
         "id": "Fruit",
         "name": "Fruit",
-        "pairCount": 10,
+        "pairCount": 18,
         "images": [
-            {
-                "src": "Image%20Resources/Fruit/%20%20Strawberry.jpg",
-                "label": "Strawberry"
-            },
             {
                 "src": "Image%20Resources/Fruit/Apple.jpg",
                 "label": "Apple"
             },
             {
-                "src": "Image%20Resources/Fruit/Banana.png",
+                "src": "Image%20Resources/Fruit/Apricot.jpeg",
+                "label": "Apricot"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Avacado.jpeg",
+                "label": "Avacado"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Banana.jpeg",
                 "label": "Banana"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Blackberry.jpeg",
+                "label": "Blackberry"
             },
             {
                 "src": "Image%20Resources/Fruit/Blueberry.jpeg",
@@ -202,6 +278,14 @@ window.GAMES = [
                 "label": "Cherry"
             },
             {
+                "src": "Image%20Resources/Fruit/Coconut.jpeg",
+                "label": "Coconut"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Dragon%20Fruit.jpeg",
+                "label": "Dragon Fruit"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Fig.jpeg",
                 "label": "Fig"
             },
@@ -210,8 +294,16 @@ window.GAMES = [
                 "label": "Grapes"
             },
             {
+                "src": "Image%20Resources/Fruit/Grapes1.jpeg",
+                "label": "Grapes1"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Guava.jpeg",
                 "label": "Guava"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Honey%20Dew.jpeg",
+                "label": "Honey Dew"
             },
             {
                 "src": "Image%20Resources/Fruit/Kiwi.jpeg",
@@ -222,12 +314,28 @@ window.GAMES = [
                 "label": "Lemon"
             },
             {
+                "src": "Image%20Resources/Fruit/Lime.jpeg",
+                "label": "Lime"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Manago%20-%201.jpeg",
+                "label": "Manago - 1"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Manago%20-%202.jpeg",
+                "label": "Manago - 2"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Manago.jpeg",
                 "label": "Manago"
             },
             {
                 "src": "Image%20Resources/Fruit/Melon.jpg",
                 "label": "Melon"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Orange-1.jpeg",
+                "label": "Orange-1"
             },
             {
                 "src": "Image%20Resources/Fruit/Orange.jpg",
@@ -238,6 +346,10 @@ window.GAMES = [
                 "label": "Papaya"
             },
             {
+                "src": "Image%20Resources/Fruit/Peach%20-%201.jpeg",
+                "label": "Peach - 1"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Peach.jpg",
                 "label": "Peach"
             },
@@ -246,12 +358,32 @@ window.GAMES = [
                 "label": "Pineapple"
             },
             {
+                "src": "Image%20Resources/Fruit/Piotaya%20Fruit.jpeg",
+                "label": "Piotaya Fruit"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Plum.jpeg",
                 "label": "Plum"
             },
             {
+                "src": "Image%20Resources/Fruit/Pomegranate.jpeg",
+                "label": "Pomegranate"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Rassberry%20-%201.jpeg",
+                "label": "Rassberry - 1"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Rassberry.jpeg",
                 "label": "Rassberry"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Strawberry.jpg",
+                "label": "Strawberry"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Water%20Apple.jpeg",
+                "label": "Water Apple"
             },
             {
                 "src": "Image%20Resources/Fruit/Watermelon.jpg",
