@@ -22,10 +22,29 @@
         <div id="scoreboard" class="scoreboard hidden"></div>
     </div>
 
+    <!-- Deck Picker Modal -->
+    <div id="deck-modal" class="modal">
+        <div class="modal-content">
+            <h2>Choose a Game</h2>
+            <p class="modal-hint">Pick a folder of images to build a matching game from.</p>
+            <div class="deck-scan hidden" id="deck-scan">
+                <div class="deck-scan-actions">
+                    <button type="button" id="scan-folder-btn">Scan a folder&hellip;</button>
+                    <button type="button" id="reconnect-folder-btn" class="hidden">Reconnect</button>
+                    <button type="button" id="forget-folder-btn" class="hidden">Forget folder</button>
+                </div>
+                <span class="scan-status" id="scan-status"></span>
+            </div>
+            <div id="deck-list" class="deck-list"></div>
+            <button type="button" id="close-deck" class="hidden">Cancel</button>
+        </div>
+    </div>
+
     <!-- Player Setup Modal -->
     <div id="player-setup-modal" class="modal">
         <div class="modal-content">
             <h2>New Game</h2>
+            <p class="modal-hint" id="player-setup-deck"></p>
             <form id="player-setup-form">
                 <label for="num-players">Number of Players:</label>
                 <input type="number" id="num-players" min="1" max="4" value="1" required>
@@ -52,6 +71,7 @@
         </div>
     </div>
 
+    <script src="games.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
