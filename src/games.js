@@ -20,6 +20,10 @@ window.GAMES = [
                 "label": "Camel"
             },
             {
+                "src": "Image%20Resources/Animals/Chicken.webp",
+                "label": "Chicken"
+            },
+            {
                 "src": "Image%20Resources/Animals/Cow.webp",
                 "label": "Cow"
             },
