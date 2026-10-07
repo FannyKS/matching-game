@@ -19,7 +19,7 @@ body {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    max-width: 900px;
+    max-width: 1100px;
     width: 100%;
     margin: 20px;
 }
@@ -106,9 +106,9 @@ button:hover {
     gap: 15px;
     padding: 20px;
     perspective: 1000px;
-    /* Fills the 900px container edge to edge, giving 152px cards instead of
-       120px. Raising this past 860 does nothing until #game-container widens. */
-    max-width: 860px;
+    /* Fills the 1100px container edge to edge, giving 192px cards instead of
+       152px. Raising this past 1060 does nothing until #game-container widens. */
+    max-width: 1060px;
     margin: 0 auto;
 }
 
@@ -183,24 +183,46 @@ button:hover {
     background: #f5f5f5;
     transform: rotateY(180deg);
     color: #667eea;
-    /* The card is landscape (4/3), so it is 90px tall where it used to be 160px.
-       The emoji font-size has to come down to match or overflow: hidden clips
-       it, and the cap matters because the board is a fixed 700px wide on wide
-       screens -- a vw value would keep growing while the card stayed put. */
-    font-size: clamp(36px, 7vw, 56px);
+    /* Column layout: the picture fills everything above a fixed name strip at
+       the bottom. `.card-face` already sets display:flex. */
+    flex-direction: column;
+    /* The card is landscape (4/3), so it is 144px tall where it used to be
+       160px. The emoji font-size is matched to that height or overflow: hidden
+       clips it; the cap matters because the board is a fixed 1060px wide on
+       wide screens -- a vw value would keep growing while the card stayed put. */
+    font-size: clamp(40px, 7vw, 70px);
     overflow: hidden;
 }
 
 /* Image decks: source photos range from 0.62 to 1.83 aspect ratio, so contain
-   keeps the whole picture visible instead of cropping the subject. The image
-   element is the full card; contain then letterboxes it to the photo's own
-   shape, so a 3:2 photo in a 4:3 card fills the width and shows thin bands.
-   cover was rejected: on a 0.6 portrait photo like Penguin it crops away 55% of
-   the picture, which is exactly the part that identifies the card. */
+   keeps the whole picture visible instead of cropping the subject. cover was
+   rejected: on a 0.6 portrait photo like Penguin it crops away 55% of the
+   picture, which is exactly the part that identifies the card.
+   flex-basis 0 with grow lets the picture take every pixel the name strip
+   below leaves over, so it stays as large as the card allows. */
 .card-image {
+    flex: 1 1 0;
+    min-height: 0;
     width: 100%;
-    height: 100%;
     object-fit: contain;
+}
+
+/* The place name shown on a revealed card. Only in the front face, so it is
+   hidden while the card is face-down. Spaces are inset from the rounded
+   corners, and nowrap+ellipsis keeps the longest label from pushing past the
+   card edge. */
+.card-label {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 6px 2px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .modal {
@@ -458,5 +480,12 @@ span.deck-preview-face {
         /* Five columns of a 4/3 card leaves only ~51px of height at 480px and
            ~35px at 375px, so the old 30px floor was larger than the card. */
         font-size: clamp(16px, 5vw, 36px);
+    }
+
+    .card-label {
+        /* ~51px of card height, so the name strip has to shrink too or it
+           eats the picture. */
+        font-size: 7px;
+        padding: 0 3px 1px;
     }
 }

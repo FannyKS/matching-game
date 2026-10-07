@@ -682,7 +682,13 @@ class MatchingGame {
     
     renderCardFace(card) {
         if (card.image) {
-            return `<img class="card-image" src="${this.escapeHtml(card.image)}" alt="${this.escapeHtml(card.label)}" draggable="false">`;
+            // The name is written on the card face rather than left only in the
+            // alt text, so a revealed photo teaches the player what it shows.
+            // It rides on the face itself, which is why it appears on reveal and
+            // not while the card is face-down.
+            const label = this.escapeHtml(card.label);
+            return `<img class="card-image" src="${this.escapeHtml(card.image)}" alt="${label}" draggable="false">` +
+                `<span class="card-label">${label}</span>`;
         }
         return this.escapeHtml(card.symbol);
     }
