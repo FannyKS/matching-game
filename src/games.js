@@ -5,8 +5,12 @@ window.GAMES = [
     {
         "id": "Animals",
         "name": "Animals",
-        "pairCount": 10,
+        "pairCount": 18,
         "images": [
+            {
+                "src": "Image%20Resources/Animals/Bear.jpg",
+                "label": "Bear"
+            },
             {
                 "src": "Image%20Resources/Animals/Bull.webp",
                 "label": "Bull"
@@ -14,6 +18,10 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Animals/Bunny.jpg",
                 "label": "Bunny"
+            },
+            {
+                "src": "Image%20Resources/Animals/Butterfly.jpg",
+                "label": "Butterfly"
             },
             {
                 "src": "Image%20Resources/Animals/Camel.jpg.webp",
@@ -36,8 +44,28 @@ window.GAMES = [
                 "label": "Dog1"
             },
             {
+                "src": "Image%20Resources/Animals/Dolphin.jpg",
+                "label": "Dolphin"
+            },
+            {
                 "src": "Image%20Resources/Animals/Elephant.webp",
                 "label": "Elephant"
+            },
+            {
+                "src": "Image%20Resources/Animals/Flamingo.jpg",
+                "label": "Flamingo"
+            },
+            {
+                "src": "Image%20Resources/Animals/Fox.jpg",
+                "label": "Fox"
+            },
+            {
+                "src": "Image%20Resources/Animals/Giraffe.jpg",
+                "label": "Giraffe"
+            },
+            {
+                "src": "Image%20Resources/Animals/Hippopotamus.jpg",
+                "label": "Hippopotamus"
             },
             {
                 "src": "Image%20Resources/Animals/horse.jpg",
@@ -46,6 +74,14 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Animals/Jaguar.webp",
                 "label": "Jaguar"
+            },
+            {
+                "src": "Image%20Resources/Animals/Kangaroo.jpg",
+                "label": "Kangaroo"
+            },
+            {
+                "src": "Image%20Resources/Animals/Lion.jpg",
+                "label": "Lion"
             },
             {
                 "src": "Image%20Resources/Animals/Moiuntain%20Goa.jpg",
@@ -60,6 +96,14 @@ window.GAMES = [
                 "label": "Owl"
             },
             {
+                "src": "Image%20Resources/Animals/Panda.jpg",
+                "label": "Panda"
+            },
+            {
+                "src": "Image%20Resources/Animals/Parrot.jpg",
+                "label": "Parrot"
+            },
+            {
                 "src": "Image%20Resources/Animals/Penguin.webp",
                 "label": "Penguin"
             },
@@ -72,8 +116,20 @@ window.GAMES = [
                 "label": "Rabbit"
             },
             {
+                "src": "Image%20Resources/Animals/Rhinoceros.jpg",
+                "label": "Rhinoceros"
+            },
+            {
+                "src": "Image%20Resources/Animals/Seal.jpg",
+                "label": "Seal"
+            },
+            {
                 "src": "Image%20Resources/Animals/Shjeep.webp",
                 "label": "Shjeep"
+            },
+            {
+                "src": "Image%20Resources/Animals/Squirrel.jpg",
+                "label": "Squirrel"
             },
             {
                 "src": "Image%20Resources/Animals/Tiger%20-%201.webp",
@@ -82,6 +138,10 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Animals/Tiger.jpeg",
                 "label": "Tiger"
+            },
+            {
+                "src": "Image%20Resources/Animals/Turtle.jpg",
+                "label": "Turtle"
             },
             {
                 "src": "Image%20Resources/Animals/Wolf.jpg",
@@ -96,7 +156,7 @@ window.GAMES = [
     {
         "id": "Flowers",
         "name": "Flowers",
-        "pairCount": 18,
+        "pairCount": 25,
         "images": [
             {
                 "src": "Image%20Resources/Flowers/Amaranth.jpg",
@@ -119,12 +179,32 @@ window.GAMES = [
                 "label": "blue-cornflower-flower-head-centaurea-cyan"
             },
             {
+                "src": "Image%20Resources/Flowers/Camellia.jpg",
+                "label": "Camellia"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Carnation.jpg",
+                "label": "Carnation"
+            },
+            {
                 "src": "Image%20Resources/Flowers/Chrysanthemum.jpg",
                 "label": "Chrysanthemum"
             },
             {
                 "src": "Image%20Resources/Flowers/Craspedia.jpg",
                 "label": "Craspedia"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Daffodil.jpg",
+                "label": "Daffodil"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Dahlia.jpg",
+                "label": "Dahlia"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Daisy.jpg",
+                "label": "Daisy"
             },
             {
                 "src": "Image%20Resources/Flowers/dandelion-flower.jpg.webp",
@@ -143,6 +223,18 @@ window.GAMES = [
                 "label": "frangipani-plumeri"
             },
             {
+                "src": "Image%20Resources/Flowers/Freesia.jpg",
+                "label": "Freesia"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Gardenia.jpg",
+                "label": "Gardenia"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Geranium.jpg",
+                "label": "Geranium"
+            },
+            {
                 "src": "Image%20Resources/Flowers/Gladiolus.jpg",
                 "label": "Gladiolus"
             },
@@ -151,8 +243,24 @@ window.GAMES = [
                 "label": "Hibiscus"
             },
             {
+                "src": "Image%20Resources/Flowers/Iris.jpg",
+                "label": "Iris"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Jasmine.jpg",
+                "label": "Jasmine"
+            },
+            {
                 "src": "Image%20Resources/Flowers/Larkspur.jpg",
                 "label": "Larkspur"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Lavender.jpg",
+                "label": "Lavender"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Lily.jpg",
+                "label": "Lily"
             },
             {
                 "src": "Image%20Resources/Flowers/Linden.jpg.webp",
@@ -169,6 +277,10 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Flowers/lotus-flower.jpg.webp",
                 "label": "lotus-flower"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Marigold.jpg",
+                "label": "Marigold"
             },
             {
                 "src": "Image%20Resources/Flowers/mauve.jpg.webp",
@@ -189,6 +301,10 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Flowers/Orchid.jpg.webp",
                 "label": "Orchid"
+            },
+            {
+                "src": "Image%20Resources/Flowers/Peony.jpg",
+                "label": "Peony"
             },
             {
                 "src": "Image%20Resources/Flowers/Pink%20Cherry%20blossom.jpeg",
@@ -231,6 +347,10 @@ window.GAMES = [
                 "label": "sun flower"
             },
             {
+                "src": "Image%20Resources/Flowers/Tulip.jpg",
+                "label": "Tulip"
+            },
+            {
                 "src": "Image%20Resources/Flowers/Zinnia-%201.jpeg",
                 "label": "Zinnia- 1"
             },
@@ -247,7 +367,7 @@ window.GAMES = [
     {
         "id": "Fruit",
         "name": "Fruit",
-        "pairCount": 18,
+        "pairCount": 25,
         "images": [
             {
                 "src": "Image%20Resources/Fruit/Apple.jpg",
@@ -270,6 +390,10 @@ window.GAMES = [
                 "label": "Blackberry"
             },
             {
+                "src": "Image%20Resources/Fruit/Blackcurrant.jpg",
+                "label": "Blackcurrant"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Blueberry.jpeg",
                 "label": "Blueberry"
             },
@@ -286,12 +410,24 @@ window.GAMES = [
                 "label": "Coconut"
             },
             {
+                "src": "Image%20Resources/Fruit/Cranberry.jpg",
+                "label": "Cranberry"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Dragon%20Fruit.jpeg",
                 "label": "Dragon Fruit"
             },
             {
                 "src": "Image%20Resources/Fruit/Fig.jpeg",
                 "label": "Fig"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Gooseberry.jpg",
+                "label": "Gooseberry"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Grapefruit.jpg",
+                "label": "Grapefruit"
             },
             {
                 "src": "Image%20Resources/Fruit/Grapes.jpg",
@@ -310,6 +446,10 @@ window.GAMES = [
                 "label": "Honey Dew"
             },
             {
+                "src": "Image%20Resources/Fruit/Jackfruit.jpg",
+                "label": "Jackfruit"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Kiwi.jpeg",
                 "label": "Kiwi"
             },
@@ -320,6 +460,10 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Fruit/Lime.jpeg",
                 "label": "Lime"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Lychee.jpg",
+                "label": "Lychee"
             },
             {
                 "src": "Image%20Resources/Fruit/Manago%20-%201.jpeg",
@@ -334,8 +478,20 @@ window.GAMES = [
                 "label": "Manago"
             },
             {
+                "src": "Image%20Resources/Fruit/Mandarin.jpg",
+                "label": "Mandarin"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Melon.jpg",
                 "label": "Melon"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Mulberry.jpg",
+                "label": "Mulberry"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Nectarine.jpg",
+                "label": "Nectarine"
             },
             {
                 "src": "Image%20Resources/Fruit/Orange-1.jpeg",
@@ -350,12 +506,20 @@ window.GAMES = [
                 "label": "Papaya"
             },
             {
+                "src": "Image%20Resources/Fruit/Passion%20Fruit.jpg",
+                "label": "Passion Fruit"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Peach%20-%201.jpeg",
                 "label": "Peach - 1"
             },
             {
                 "src": "Image%20Resources/Fruit/Peach.jpg",
                 "label": "Peach"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Persimmon.jpg",
+                "label": "Persimmon"
             },
             {
                 "src": "Image%20Resources/Fruit/Pineapple.jpg",
@@ -374,6 +538,14 @@ window.GAMES = [
                 "label": "Pomegranate"
             },
             {
+                "src": "Image%20Resources/Fruit/Pomelo.jpg",
+                "label": "Pomelo"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Quince.jpg",
+                "label": "Quince"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Rassberry%20-%201.jpeg",
                 "label": "Rassberry - 1"
             },
@@ -382,8 +554,16 @@ window.GAMES = [
                 "label": "Rassberry"
             },
             {
+                "src": "Image%20Resources/Fruit/Star%20Fruit.jpg",
+                "label": "Star Fruit"
+            },
+            {
                 "src": "Image%20Resources/Fruit/Strawberry.jpg",
                 "label": "Strawberry"
+            },
+            {
+                "src": "Image%20Resources/Fruit/Tamarind.jpg",
+                "label": "Tamarind"
             },
             {
                 "src": "Image%20Resources/Fruit/Water%20Apple.jpeg",
@@ -398,7 +578,7 @@ window.GAMES = [
     {
         "id": "Furniture",
         "name": "Furniture",
-        "pairCount": 10,
+        "pairCount": 17,
         "images": [
             {
                 "src": "Image%20Resources/Furniture/armchair.svg",
@@ -409,8 +589,16 @@ window.GAMES = [
                 "label": "bed"
             },
             {
+                "src": "Image%20Resources/Furniture/bench.svg",
+                "label": "bench"
+            },
+            {
                 "src": "Image%20Resources/Furniture/bookshelf.svg",
                 "label": "bookshelf"
+            },
+            {
+                "src": "Image%20Resources/Furniture/bunk-bed.svg",
+                "label": "bunk-bed"
             },
             {
                 "src": "Image%20Resources/Furniture/coat-rack.svg",
@@ -419,6 +607,14 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Furniture/coffee-table.svg",
                 "label": "coffee-table"
+            },
+            {
+                "src": "Image%20Resources/Furniture/console-table.svg",
+                "label": "console-table"
+            },
+            {
+                "src": "Image%20Resources/Furniture/crib.svg",
+                "label": "crib"
             },
             {
                 "src": "Image%20Resources/Furniture/desk-lamp.svg",
@@ -433,6 +629,30 @@ window.GAMES = [
                 "label": "dining-table"
             },
             {
+                "src": "Image%20Resources/Furniture/dresser.svg",
+                "label": "dresser"
+            },
+            {
+                "src": "Image%20Resources/Furniture/filing-cabinet.svg",
+                "label": "filing-cabinet"
+            },
+            {
+                "src": "Image%20Resources/Furniture/high-chair.svg",
+                "label": "high-chair"
+            },
+            {
+                "src": "Image%20Resources/Furniture/hutch.svg",
+                "label": "hutch"
+            },
+            {
+                "src": "Image%20Resources/Furniture/ironing-board.svg",
+                "label": "ironing-board"
+            },
+            {
+                "src": "Image%20Resources/Furniture/ladder.svg",
+                "label": "ladder"
+            },
+            {
                 "src": "Image%20Resources/Furniture/nightstand.svg",
                 "label": "nightstand"
             },
@@ -443,6 +663,14 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Furniture/ottoman.svg",
                 "label": "ottoman"
+            },
+            {
+                "src": "Image%20Resources/Furniture/pouf.svg",
+                "label": "pouf"
+            },
+            {
+                "src": "Image%20Resources/Furniture/recliner.svg",
+                "label": "recliner"
             },
             {
                 "src": "Image%20Resources/Furniture/rocking-chair.svg",
@@ -465,8 +693,20 @@ window.GAMES = [
                 "label": "sofa"
             },
             {
+                "src": "Image%20Resources/Furniture/stool.svg",
+                "label": "stool"
+            },
+            {
+                "src": "Image%20Resources/Furniture/storage-chest.svg",
+                "label": "storage-chest"
+            },
+            {
                 "src": "Image%20Resources/Furniture/tv-stand.svg",
                 "label": "tv-stand"
+            },
+            {
+                "src": "Image%20Resources/Furniture/vanity.svg",
+                "label": "vanity"
             },
             {
                 "src": "Image%20Resources/Furniture/wall-mirror.svg",
@@ -485,8 +725,12 @@ window.GAMES = [
     {
         "id": "Travel",
         "name": "Travel",
-        "pairCount": 16,
+        "pairCount": 23,
         "images": [
+            {
+                "src": "Image%20Resources/Travel/Angkor%20Wat.jpg",
+                "label": "Angkor Wat"
+            },
             {
                 "src": "Image%20Resources/Travel/Argentina.avif",
                 "label": "Argentina"
@@ -508,8 +752,16 @@ window.GAMES = [
                 "label": "China"
             },
             {
+                "src": "Image%20Resources/Travel/Christ%20the%20Redeemer.jpg",
+                "label": "Christ the Redeemer"
+            },
+            {
                 "src": "Image%20Resources/Travel/Colombia.avif",
                 "label": "Colombia"
+            },
+            {
+                "src": "Image%20Resources/Travel/Colosseum.jpg",
+                "label": "Colosseum"
             },
             {
                 "src": "Image%20Resources/Travel/Costa%20Rica.avif",
@@ -518,6 +770,18 @@ window.GAMES = [
             {
                 "src": "Image%20Resources/Travel/Croatia.avif",
                 "label": "Croatia"
+            },
+            {
+                "src": "Image%20Resources/Travel/Easter%20Island.jpg",
+                "label": "Easter Island"
+            },
+            {
+                "src": "Image%20Resources/Travel/Eiffel%20Tower.jpg",
+                "label": "Eiffel Tower"
+            },
+            {
+                "src": "Image%20Resources/Travel/Grand%20Canyon.jpg",
+                "label": "Grand Canyon"
             },
             {
                 "src": "Image%20Resources/Travel/Great%20Wall.jpg",
@@ -556,6 +820,10 @@ window.GAMES = [
                 "label": "London"
             },
             {
+                "src": "Image%20Resources/Travel/Machu%20Picchu.jpg",
+                "label": "Machu Picchu"
+            },
+            {
                 "src": "Image%20Resources/Travel/Madagascar.avif",
                 "label": "Madagascar"
             },
@@ -568,12 +836,24 @@ window.GAMES = [
                 "label": "Morocco"
             },
             {
+                "src": "Image%20Resources/Travel/Mount%20Fuji.jpg",
+                "label": "Mount Fuji"
+            },
+            {
+                "src": "Image%20Resources/Travel/Mount%20Rushmore.jpg",
+                "label": "Mount Rushmore"
+            },
+            {
                 "src": "Image%20Resources/Travel/Nepal.avif",
                 "label": "Nepal"
             },
             {
                 "src": "Image%20Resources/Travel/New%20Zeland.avif",
                 "label": "New Zeland"
+            },
+            {
+                "src": "Image%20Resources/Travel/Niagara%20Falls.jpg",
+                "label": "Niagara Falls"
             },
             {
                 "src": "Image%20Resources/Travel/Norway.avif",
@@ -584,12 +864,24 @@ window.GAMES = [
                 "label": "Peru"
             },
             {
+                "src": "Image%20Resources/Travel/Petra.jpg",
+                "label": "Petra"
+            },
+            {
                 "src": "Image%20Resources/Travel/Philippines.avif",
                 "label": "Philippines"
             },
             {
                 "src": "Image%20Resources/Travel/Portugal.avif",
                 "label": "Portugal"
+            },
+            {
+                "src": "Image%20Resources/Travel/Santorini.jpg",
+                "label": "Santorini"
+            },
+            {
+                "src": "Image%20Resources/Travel/Stonehenge.jpg",
+                "label": "Stonehenge"
             },
             {
                 "src": "Image%20Resources/Travel/Sweden.avif",
@@ -604,12 +896,20 @@ window.GAMES = [
                 "label": "sydney"
             },
             {
+                "src": "Image%20Resources/Travel/Taj%20Mahal.jpg",
+                "label": "Taj Mahal"
+            },
+            {
                 "src": "Image%20Resources/Travel/Thailand.avif",
                 "label": "Thailand"
             },
             {
                 "src": "Image%20Resources/Travel/Turkey.avif",
                 "label": "Turkey"
+            },
+            {
+                "src": "Image%20Resources/Travel/Venice.jpg",
+                "label": "Venice"
             },
             {
                 "src": "Image%20Resources/Travel/Vietnam.avif",

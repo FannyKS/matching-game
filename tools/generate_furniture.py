@@ -297,6 +297,189 @@ def shoe_rack():
     """)
 
 
+def bench():
+    return svg(f"""
+      <rect x="108" y="118" width="24" height="150" rx="10" fill="{WOOD}"/>
+      <rect x="380" y="118" width="24" height="150" rx="10" fill="{WOOD}"/>
+      <rect x="132" y="140" width="248" height="22" rx="9" fill="{WOOD_L}"/>
+      <rect x="132" y="182" width="248" height="22" rx="9" fill="{WOOD_L}"/>
+      <rect x="80" y="244" width="352" height="28" rx="12" fill="{WOOD_L}"/>
+      <rect x="92" y="272" width="328" height="16" rx="7" fill="{WOOD_D}"/>
+      {leg(104, 288, 28, 76)}{leg(380, 288, 28, 76)}
+    """)
+
+
+def stool():
+    return svg(f"""
+      <rect x="206" y="198" width="24" height="158" rx="10" fill="{WOOD_D}"/>
+      <rect x="282" y="198" width="24" height="158" rx="10" fill="{WOOD_D}"/>
+      <rect x="180" y="208" width="24" height="148" rx="10" fill="{WOOD}"/>
+      <rect x="308" y="208" width="24" height="148" rx="10" fill="{WOOD}"/>
+      <rect x="170" y="180" width="172" height="30" rx="14" fill="{WOOD_L}"/>
+      <path d="M192 300 L320 300" fill="none" stroke="{WOOD_D}" stroke-width="12"/>
+    """)
+
+
+def bunk_bed():
+    return svg(f"""
+      <rect x="98" y="76" width="26" height="330" rx="10" fill="{WOOD}"/>
+      <rect x="388" y="76" width="26" height="330" rx="10" fill="{WOOD}"/>
+      <rect x="124" y="112" width="264" height="34" rx="10" fill="#fbf8f3"/>
+      <rect x="124" y="146" width="264" height="14" fill="{FAB_L}"/>
+      <rect x="124" y="264" width="264" height="34" rx="10" fill="#fbf8f3"/>
+      <rect x="124" y="298" width="264" height="14" fill="{FAB_L}"/>
+      <rect x="138" y="112" width="64" height="26" rx="10" fill="#ffffff"/>
+      <rect x="138" y="264" width="64" height="26" rx="10" fill="#ffffff"/>
+      <path d="M256 150 L256 258" fill="none" stroke="{WOOD}" stroke-width="14"/>
+      <path d="M186 200 L326 200 M186 226 L326 226" fill="none" stroke="{WOOD_L}" stroke-width="10"/>
+    """)
+
+
+def crib():
+    return svg(f"""
+      <rect x="102" y="128" width="24" height="210" rx="9" fill="{WOOD}"/>
+      <rect x="386" y="128" width="24" height="210" rx="9" fill="{WOOD}"/>
+      <rect x="102" y="150" width="308" height="22" rx="10" fill="{WOOD_L}"/>
+      <rect x="102" y="300" width="308" height="26" rx="11" fill="{WOOD}"/>
+      <path d="M150 172 L150 300 M186 172 L186 300 M222 172 L222 300 M258 172 L258 300 M294 172 L294 300 M330 172 L330 300 M362 172 L362 300" fill="none" stroke="{WOOD_L}" stroke-width="10"/>
+      {leg(114, 326, 24, 54)}{leg(376, 326, 24, 54)}
+    """)
+
+
+def dresser():
+    return svg(f"""
+      <rect x="118" y="120" width="276" height="248" rx="14" fill="{WOOD}"/>
+      <rect x="134" y="136" width="244" height="52" rx="8" fill="{WOOD_L}"/>
+      <rect x="134" y="198" width="244" height="52" rx="8" fill="{WOOD_L}"/>
+      <rect x="134" y="260" width="244" height="52" rx="8" fill="{WOOD_L}"/>
+      <rect x="134" y="322" width="244" height="30" rx="8" fill="{WOOD_L}"/>
+      <circle cx="256" cy="162" r="9" fill="{WOOD_D}"/>
+      <circle cx="256" cy="224" r="9" fill="{WOOD_D}"/>
+      <circle cx="256" cy="286" r="9" fill="{WOOD_D}"/>
+      <circle cx="196" cy="337" r="8" fill="{WOOD_D}"/>
+      <circle cx="316" cy="337" r="8" fill="{WOOD_D}"/>
+      {leg(130, 368, 28, 44)}{leg(354, 368, 28, 44)}
+    """)
+
+
+def filing_cabinet():
+    return svg(f"""
+      <rect x="156" y="84" width="200" height="326" rx="12" fill="{METAL}"/>
+      <rect x="172" y="100" width="168" height="68" rx="7" fill="#6f7a84"/>
+      <rect x="172" y="178" width="168" height="68" rx="7" fill="#6f7a84"/>
+      <rect x="172" y="256" width="168" height="68" rx="7" fill="#6f7a84"/>
+      <rect x="172" y="334" width="168" height="60" rx="7" fill="#6f7a84"/>
+      <rect x="216" y="126" width="80" height="14" rx="7" fill="{METAL_D}"/>
+      <rect x="216" y="204" width="80" height="14" rx="7" fill="{METAL_D}"/>
+      <rect x="216" y="282" width="80" height="14" rx="7" fill="{METAL_D}"/>
+      <rect x="216" y="356" width="80" height="14" rx="7" fill="{METAL_D}"/>
+    """)
+
+
+def high_chair():
+    return svg(f"""
+      <rect x="204" y="92" width="104" height="112" rx="18" fill="{WOOD_L}"/>
+      <rect x="156" y="200" width="200" height="26" rx="11" fill="{WOOD}"/>
+      <rect x="138" y="226" width="236" height="18" rx="9" fill="{WOOD_L}"/>
+      {leg(166, 226, 22, 154)}{leg(324, 226, 22, 154)}
+      <rect x="182" y="304" width="148" height="14" rx="7" fill="{WOOD_L}"/>
+    """)
+
+
+def hutch():
+    return svg(f"""
+      <rect x="118" y="70" width="276" height="150" rx="12" fill="{WOOD}"/>
+      <rect x="134" y="86" width="244" height="118" rx="8" fill="{WOOD_D}"/>
+      <rect x="134" y="140" width="244" height="12" fill="{WOOD_L}"/>
+      <rect x="154" y="106" width="22" height="34" rx="5" fill="{CUSH}"/>
+      <rect x="184" y="112" width="22" height="28" rx="5" fill="{FAB_L}"/>
+      <rect x="214" y="102" width="22" height="38" rx="5" fill="#d8a24a"/>
+      <rect x="154" y="166" width="22" height="34" rx="5" fill="#7fa06b"/>
+      <rect x="184" y="172" width="22" height="28" rx="5" fill="{CUSH}"/>
+      <rect x="110" y="230" width="292" height="150" rx="12" fill="{WOOD}"/>
+      <rect x="126" y="246" width="120" height="118" rx="8" fill="{WOOD_L}"/>
+      <rect x="266" y="246" width="120" height="118" rx="8" fill="{WOOD_L}"/>
+      <circle cx="238" cy="305" r="8" fill="{WOOD_D}"/>
+      <circle cx="274" cy="305" r="8" fill="{WOOD_D}"/>
+      {leg(122, 380, 26, 40)}{leg(364, 380, 26, 40)}
+    """)
+
+
+def ironing_board():
+    return svg(f"""
+      <rect x="76" y="196" width="360" height="28" rx="13" fill="#d9d3c8"/>
+      <path d="M150 224 L120 372 M330 224 L360 372" fill="none" stroke="{METAL}" stroke-width="16"/>
+      <path d="M138 306 L344 306" fill="none" stroke="{METAL_D}" stroke-width="12"/>
+      <path d="M214 166 L288 166 L302 198 L196 198 Z" fill="{METAL}"/>
+      <rect x="196" y="176" width="92" height="14" rx="6" fill="{METAL_D}"/>
+      <path d="M290 174 Q322 174 318 194" fill="none" stroke="{METAL_D}" stroke-width="8"/>
+    """)
+
+
+def ladder():
+    return svg(f"""
+      <path d="M182 66 L182 402 M332 66 L332 402" fill="none" stroke="{WOOD}" stroke-width="22"/>
+      <path d="M182 140 L332 140 M182 208 L332 208 M182 276 L332 276 M182 344 L332 344" fill="none" stroke="{WOOD_L}" stroke-width="16"/>
+    """)
+
+
+def vanity():
+    return svg(f"""
+      <ellipse cx="256" cy="132" rx="54" ry="62" fill="{WOOD_D}"/>
+      <ellipse cx="256" cy="132" rx="40" ry="48" fill="#dbe7ee"/>
+      <rect x="120" y="200" width="272" height="26" rx="12" fill="{WOOD_L}"/>
+      <rect x="150" y="226" width="212" height="92" rx="10" fill="{WOOD}"/>
+      <rect x="162" y="240" width="88" height="30" rx="7" fill="{WOOD_L}"/>
+      <rect x="262" y="240" width="88" height="30" rx="7" fill="{WOOD_L}"/>
+      <rect x="162" y="278" width="88" height="30" rx="7" fill="{WOOD_L}"/>
+      <rect x="262" y="278" width="88" height="30" rx="7" fill="{WOOD_L}"/>
+      {leg(134, 318, 24, 86)}{leg(354, 318, 24, 86)}
+    """)
+
+
+def console_table():
+    return svg(f"""
+      <rect x="66" y="196" width="380" height="24" rx="11" fill="{WOOD_L}"/>
+      <rect x="66" y="220" width="380" height="14" rx="7" fill="{WOOD_D}"/>
+      <rect x="104" y="234" width="22" height="150" rx="10" fill="{WOOD}"/>
+      <rect x="386" y="234" width="22" height="150" rx="10" fill="{WOOD}"/>
+      <rect x="150" y="256" width="212" height="72" rx="9" fill="{WOOD}"/>
+      <rect x="164" y="268" width="184" height="20" rx="6" fill="{WOOD_L}"/>
+      <rect x="164" y="296" width="184" height="20" rx="6" fill="{WOOD_L}"/>
+    """)
+
+
+def recliner():
+    return svg(f"""
+      <rect x="184" y="118" width="168" height="104" rx="26" fill="{FAB_L}"/>
+      <rect x="120" y="196" width="52" height="108" rx="22" fill="{FAB_D}"/>
+      <rect x="340" y="196" width="52" height="108" rx="22" fill="{FAB_D}"/>
+      <rect x="164" y="214" width="184" height="70" rx="24" fill="{FAB}"/>
+      <rect x="150" y="270" width="256" height="34" rx="16" fill="{FAB}"/>
+      {leg(170, 304, 28, 74)}{leg(314, 304, 28, 74)}
+    """)
+
+
+def storage_chest():
+    return svg(f"""
+      <rect x="118" y="184" width="276" height="60" rx="14" fill="{WOOD_L}"/>
+      <rect x="118" y="232" width="276" height="132" rx="12" fill="{WOOD}"/>
+      <rect x="124" y="244" width="264" height="14" fill="{WOOD_D}"/>
+      <rect x="236" y="226" width="40" height="48" rx="9" fill="{METAL}"/>
+      <rect x="150" y="352" width="212" height="14" rx="7" fill="{WOOD_D}"/>
+      {leg(132, 364, 24, 40)}{leg(356, 364, 24, 40)}
+    """)
+
+
+def pouf():
+    return svg(f"""
+      <rect x="140" y="220" width="232" height="112" rx="28" fill="{CUSH}"/>
+      <ellipse cx="256" cy="220" rx="116" ry="34" fill="#d9705f"/>
+      <path d="M232 232 L232 326 M280 232 L280 326" fill="none" stroke="#a8453c" stroke-width="6"/>
+      <ellipse cx="256" cy="214" rx="10" ry="6" fill="#a8453c"/>
+    """)
+
+
 PIECES = [
     ("armchair", armchair), ("sofa", sofa), ("dining-chair", dining_chair),
     ("coffee-table", coffee_table), ("side-table", side_table), ("bed", bed),
@@ -306,6 +489,12 @@ PIECES = [
     ("ottoman", ottoman), ("wall-mirror", mirror), ("coat-rack", coat_rack),
     ("rocking-chair", rocking_chair), ("dining-table", dining_table),
     ("shoe-rack", shoe_rack),
+    ("bench", bench), ("stool", stool), ("bunk-bed", bunk_bed),
+    ("crib", crib), ("dresser", dresser), ("filing-cabinet", filing_cabinet),
+    ("high-chair", high_chair), ("hutch", hutch),
+    ("ironing-board", ironing_board), ("ladder", ladder), ("vanity", vanity),
+    ("console-table", console_table), ("recliner", recliner),
+    ("storage-chest", storage_chest), ("pouf", pouf),
 ]
 
 
