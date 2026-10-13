@@ -15,18 +15,7 @@ is original vector art and needs no attribution.
 - **Bear** — 2010-kodiak-bear-1.jpg; Yathin S Krishnappa; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:2010-kodiak-bear-1.jpg
 - **Hippopotamus** — Portrait_Hippopotamus_in_the_water.jpg; Muhammad Mahdi Karim; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Portrait_Hippopotamus_in_the_water.jpg
 - **Rhinoceros** — 081_White_rhinoceros_(male)_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg; Giles Laurent; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:081_White_rhinoceros_(male)_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg
-- **Squirrel** — Sciuridae.jpg; Chicoutimi (montage)
-
-
-Karakal
-AndiW
-National Park Service
-en:User:Markus Krötzsch
-The Lilac Breasted Roller
-Nico Conradie from Centurion, South Africa
-Hans Hillewaert
-Sylvouille
-National Park Service; CC BY 3.0; https://commons.wikimedia.org/wiki/File:Sciuridae.jpg
+- **Squirrel** — Sciuridae.jpg; montage by Chicoutimi and others; CC BY 3.0; https://commons.wikimedia.org/wiki/File:Sciuridae.jpg
 - **Dolphin** — Common_dolphin_noaa.jpg; NOAA NMFS; Public domain; https://commons.wikimedia.org/wiki/File:Common_dolphin_noaa.jpg
 - **Seal** — Common_seal_(Phoca_vitulina)_2.jpg; Charles J. Sharp; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Common_seal_(Phoca_vitulina)_2.jpg
 - **Parrot** — Rainbow_lorikeet_(Trichoglossus_moluccanus_moluccanus)_Sydney.jpg; Charles J. Sharp; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Rainbow_lorikeet_(Trichoglossus_moluccanus_moluccanus)_Sydney.jpg
@@ -63,11 +52,11 @@ National Park Service; CC BY 3.0; https://commons.wikimedia.org/wiki/File:Sciuri
 - **Persimmon** — Fuyu_persimmon_fruits,_one_cut_open.jpg; Frank Schulenburg; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Fuyu_persimmon_fruits,_one_cut_open.jpg
 - **Quince** — Quince (10889s).jpg; Rhododendrites; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Quince_(10889s).jpg
 - **Tamarind** — Tamarindus_indica_pods.JPG; B.navez; CC BY 2.5; https://commons.wikimedia.org/wiki/File:Tamarindus_indica_pods.JPG
-- **Jackfruit** — The_jackfruit_is_holding_on_to_the_tree.jpg; This work was made by Tushar Hossain and released under the license(s) stated below. Please feel free to use it for any purpose as long as you credit Tushar Hossain as author and follow the terms of the chosen license. If you use this work outside of the Wikimedia projects, I would very much like to get a note from you. Thanks!; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:The_jackfruit_is_holding_on_to_the_tree.jpg
+- **Jackfruit** — The_jackfruit_is_holding_on_to_the_tree.jpg; Tushar Hossain; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:The_jackfruit_is_holding_on_to_the_tree.jpg
 - **Lychee** — Litchi_chinensis_fruits.JPG; B.navez; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:Litchi_chinensis_fruits.JPG
 - **Mulberry** — Mulberries_on_tree_1.jpg; malenki; CC BY 3.0; https://commons.wikimedia.org/wiki/File:Mulberries_on_tree_1.jpg
 - **Star Fruit** — Averrhoa_carambola_ARS_k5735-7.jpg; unknown; Public domain; https://commons.wikimedia.org/wiki/File:Averrhoa_carambola_ARS_k5735-7.jpg
-- **Passion Fruit** — Passiflora_edulis_forma_flavicarpa.jpg; Unknown authorUnknown author; Public domain; https://commons.wikimedia.org/wiki/File:Passiflora_edulis_forma_flavicarpa.jpg
+- **Passion Fruit** — Passiflora_edulis_forma_flavicarpa.jpg; unknown author; Public domain; https://commons.wikimedia.org/wiki/File:Passiflora_edulis_forma_flavicarpa.jpg
 - **Pomelo** — Pomelo_fruit.jpg; Ivar Leidus; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Pomelo_fruit.jpg
 
 ## Travel
