@@ -4,45 +4,63 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #333;
+    /* The game is meant for a projector: fill the screen and never scroll. */
+    overflow: hidden;
 }
 
 #game-container {
     background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    max-width: 1100px;
     width: 100%;
-    margin: 20px;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: clamp(6px, 1.2vh, 18px) clamp(10px, 1.4vw, 28px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: clamp(6px, 1vw, 16px);
+    margin-bottom: clamp(4px, 0.8vh, 10px);
 }
 
 header h1 {
     color: #667eea;
-    margin-bottom: 15px;
+    font-size: clamp(18px, 2.6vh, 36px);
+    line-height: 1.05;
+    margin: 0;
+    white-space: nowrap;
 }
 
 #game-info {
+    flex: 1 1 560px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    gap: clamp(8px, 1vw, 18px);
+    padding: clamp(6px, 0.9vh, 14px) clamp(10px, 1vw, 20px);
     background: #f5f5f5;
-    border-radius: 10px;
+    border-radius: clamp(8px, 1vh, 14px);
+    font-size: clamp(14px, 2vh, 30px);
 }
 
 #players-info {
@@ -52,8 +70,8 @@ header h1 {
 }
 
 .player {
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: clamp(4px, 0.7vh, 12px) clamp(8px, 0.9vw, 18px);
+    border-radius: clamp(6px, 0.8vh, 12px);
     transition: all 0.3s ease;
 }
 
@@ -64,16 +82,19 @@ header h1 {
 }
 
 .player-score {
-    margin-left: 5px;
+    margin-left: clamp(4px, 0.4vw, 8px);
 }
 
 button {
-    padding: 8px 16px;
+    padding: clamp(8px, 1.1vh, 18px) clamp(14px, 1.4vw, 30px);
     background: #667eea;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: clamp(6px, 0.8vh, 12px);
     cursor: pointer;
+    font-size: clamp(14px, 1.7vh, 26px);
+    font-weight: 600;
+    min-height: 44px;
     transition: background 0.3s ease;
 }
 
@@ -82,12 +103,14 @@ button:hover {
 }
 
 .message {
+    flex: 0 0 auto;
     text-align: center;
-    font-size: 18px;
+    font-size: clamp(18px, 2.5vh, 38px);
     font-weight: bold;
-    padding: 10px;
-    margin-bottom: 20px;
-    min-height: 40px;
+    padding: clamp(2px, 0.5vh, 10px);
+    margin-bottom: clamp(4px, 0.8vh, 12px);
+    min-height: clamp(26px, 4vh, 54px);
+    line-height: 1.15;
     color: #667eea;
     transition: all 0.3s ease;
 }
@@ -101,20 +124,27 @@ button:hover {
 }
 
 .game-board {
+    flex: 1 1 auto;
+    min-height: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-    padding: 20px;
-    perspective: 1000px;
-    /* Fills the 1100px container edge to edge, giving 192px cards instead of
-       152px. Raising this past 1060 does nothing until #game-container widens. */
-    max-width: 1060px;
-    margin: 0 auto;
+    /* 20 cards fill the whole screen: 5 across, 4 down. Rows are 1fr so the
+       board stretches to every pixel between the header and the bottom edge. */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    gap: clamp(5px, 0.9vh, 14px);
+    padding: 0;
+    perspective: 1400px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 .card {
     width: 100%;
-    aspect-ratio: 4/3;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    aspect-ratio: auto;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s ease;
@@ -160,69 +190,84 @@ button:hover {
 
 .card-face {
     position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    /* A strong frame keeps neighbouring photo cards from reading as one
+       picture when they sit side by side on the projector. */
+    border: clamp(2px, 0.4vh, 5px) solid #5f6494;
+    border-radius: clamp(8px, 1.2vh, 18px);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(20px, 4vw, 36px);
+    font-size: clamp(24px, 3.2vh, 46px);
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 clamp(3px, 0.5vh, 8px) clamp(6px, 1vh, 16px) rgba(0, 0, 0, 0.2);
 }
 
 .card-back {
     background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
     cursor: pointer;
-    font-size: clamp(24px, 4vw, 32px);
+    border-color: rgba(255, 255, 255, 0.75);
+    /* The card backs show the card number, which players call out across the
+       room, so it is tied to the card height rather than a fixed size. */
+    font-size: clamp(34px, 9vh, 120px);
+    line-height: 1;
 }
 
 .card-front {
-    background: #f5f5f5;
+    background: #fff;
     transform: rotateY(180deg);
     color: #667eea;
-    /* Column layout: the picture fills everything above a fixed name strip at
-       the bottom. `.card-face` already sets display:flex. */
+    /* Column layout: the picture fills the card and the name floats over it. */
     flex-direction: column;
-    /* The card is landscape (4/3), so it is 144px tall where it used to be
-       160px. The emoji font-size is matched to that height or overflow: hidden
-       clips it; the cap matters because the board is a fixed 1060px wide on
-       wide screens -- a vw value would keep growing while the card stayed put. */
-    font-size: clamp(40px, 7vw, 70px);
+    /* Emoji cards have no picture, so the symbol takes the card height. */
+    font-size: clamp(40px, 11vh, 160px);
     overflow: hidden;
 }
 
-/* Image decks: source photos range from 0.62 to 1.83 aspect ratio, so contain
+/* Image decks: source photos range from 0.6 to 1.8 aspect ratio, so contain
    keeps the whole picture visible instead of cropping the subject. cover was
    rejected: on a 0.6 portrait photo like Penguin it crops away 55% of the
    picture, which is exactly the part that identifies the card.
-   flex-basis 0 with grow lets the picture take every pixel the name strip
-   below leaves over, so it stays as large as the card allows. */
+   The name strip is an overlay (below), so the picture gets the full card. */
 .card-image {
     flex: 1 1 0;
     min-height: 0;
     width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
-/* The place name shown on a revealed card. Only in the front face, so it is
-   hidden while the card is face-down. Spaces are inset from the rounded
-   corners, and nowrap+ellipsis keeps the longest label from pushing past the
-   card edge. */
+/* The place name shown on a revealed card. It floats over the bottom of the
+   picture instead of stealing a strip of height, so the photo stays as large
+   as the card allows. Long folder names wrap to a second line. */
 .card-label {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 0 6px 2px;
-    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: clamp(4px, 0.7vh, 10px);
+    transform: translateX(-50%);
+    z-index: 2;
+    width: max-content;
+    max-width: calc(100% - clamp(12px, 2vw, 32px));
+    padding: clamp(1px, 0.3vh, 5px) clamp(6px, 0.8vw, 14px);
+    border-radius: clamp(5px, 0.8vh, 10px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(12px, 1.8vh, 30px);
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.15;
     text-align: center;
-    color: #555;
-    white-space: nowrap;
+    color: #333;
+    white-space: normal;
     overflow: hidden;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 2.4em;
+    pointer-events: none;
 }
 
 .modal {
@@ -244,37 +289,40 @@ button:hover {
 
 .modal-content {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
+    padding: clamp(18px, 3vh, 42px);
+    border-radius: clamp(10px, 1.6vh, 22px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    min-width: 300px;
+    min-width: min(88vw, 360px);
     max-width: 92vw;
+    max-height: 92vh;
+    overflow-y: auto;
+    font-size: clamp(15px, 1.8vh, 24px);
 }
 
 .modal-hint {
-    font-size: 13px;
+    font-size: clamp(13px, 1.6vh, 22px);
     color: #666;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: clamp(8px, 1.2vh, 18px);
 }
 
 /* Live folder scanning (File System Access API) */
 .deck-scan {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: clamp(8px, 1.2vh, 18px);
+    padding-bottom: clamp(8px, 1.2vh, 18px);
     border-bottom: 1px solid #eee;
 }
 
 .deck-scan-actions {
     display: flex;
-    gap: 8px;
+    gap: clamp(6px, 0.8vw, 12px);
     flex-wrap: wrap;
 }
 
 .scan-status {
     display: block;
-    margin-top: 8px;
-    font-size: 12px;
+    margin-top: clamp(4px, 0.8vh, 10px);
+    font-size: clamp(11px, 1.4vh, 18px);
     color: #666;
 }
 
@@ -285,7 +333,7 @@ button:hover {
     border-radius: 8px;
     background: #48bb78;
     color: white;
-    font-size: 10px;
+    font-size: clamp(9px, 1.1vh, 14px);
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.4px;
@@ -294,15 +342,15 @@ button:hover {
 
 /* Deck picker */
 #deck-modal .modal-content {
-    min-width: 340px;
+    min-width: min(88vw, 420px);
 }
 
 .deck-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 15px;
-    max-height: 60vh;
+    gap: clamp(6px, 1vh, 14px);
+    margin-bottom: clamp(8px, 1.2vh, 18px);
+    max-height: 70vh;
     overflow-y: auto;
 }
 
@@ -312,14 +360,14 @@ button:hover {
     grid-template-areas:
         "name preview"
         "meta preview";
-    gap: 2px 14px;
+    gap: 2px clamp(10px, 1.2vw, 20px);
     align-items: center;
     text-align: left;
-    padding: 10px 12px;
+    padding: clamp(8px, 1.2vh, 16px) clamp(10px, 1.2vw, 20px);
     background: #f5f5f5;
     color: #333;
     border: 2px solid transparent;
-    border-radius: 10px;
+    border-radius: clamp(8px, 1vh, 14px);
 }
 
 .deck-item:hover {
@@ -347,11 +395,12 @@ button:hover {
     grid-area: name;
     font-weight: bold;
     color: #667eea;
+    font-size: clamp(16px, 2.4vh, 30px);
 }
 
 .deck-meta {
     grid-area: meta;
-    font-size: 12px;
+    font-size: clamp(12px, 1.7vh, 22px);
     color: #666;
 }
 
@@ -362,9 +411,9 @@ button:hover {
 
 .deck-preview-face {
     display: block;
-    width: 72px;
-    height: 72px;
-    border-radius: 8px;
+    width: clamp(60px, 8vh, 116px);
+    height: clamp(60px, 8vh, 116px);
+    border-radius: clamp(6px, 0.9vh, 12px);
     background: white;
     border: 1px solid #ddd;
     object-fit: cover;
@@ -374,63 +423,78 @@ span.deck-preview-face {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+    font-size: clamp(28px, 4vh, 56px);
 }
 
 .deck-preview-blank {
     display: block;
-    width: 72px;
-    height: 72px;
-    border-radius: 8px;
+    width: clamp(60px, 8vh, 116px);
+    height: clamp(60px, 8vh, 116px);
+    border-radius: clamp(6px, 0.9vh, 12px);
     background: #fafafa;
     border: 2px dashed #ccc;
 }
 
 .deck-empty {
     color: #666;
-    font-size: 14px;
+    font-size: clamp(13px, 1.6vh, 22px);
 }
 
 .modal-content h2 {
     color: #667eea;
-    margin-bottom: 20px;
+    font-size: clamp(22px, 3vh, 40px);
+    margin-bottom: clamp(10px, 1.5vh, 24px);
     text-align: center;
 }
 
 .modal-content form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: clamp(10px, 1.5vh, 20px);
 }
 
 .modal-content input[type="number"] {
-    padding: 10px;
+    padding: clamp(8px, 1.2vh, 16px);
     border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: clamp(5px, 0.7vh, 10px);
+    font-size: clamp(16px, 2vh, 28px);
 }
 
 .setting-item {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: clamp(3px, 0.5vh, 8px);
 }
 
 .setting-description {
-    font-size: 12px;
+    font-size: clamp(12px, 1.5vh, 20px);
     color: #666;
 }
 
 .scoreboard {
     text-align: center;
-    padding: 20px;
+    padding: clamp(14px, 2.5vh, 32px);
     background: #f5f5f5;
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: clamp(10px, 1.5vh, 20px);
+    margin-top: clamp(8px, 1.2vh, 18px);
+    font-size: clamp(18px, 2.4vh, 34px);
 }
 
 .scoreboard.hidden {
     display: none;
+}
+
+/* Results replace the finished board so they can use the whole screen. */
+#game-container:has(.scoreboard:not(.hidden)) .game-board {
+    display: none;
+}
+
+.scoreboard:not(.hidden) {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
 }
 
 /* Generic hide, also used to toggle the deck picker's Cancel button */
@@ -440,17 +504,18 @@ span.deck-preview-face {
 
 .scoreboard h2 {
     color: #667eea;
-    margin-bottom: 15px;
+    font-size: clamp(24px, 3.4vh, 46px);
+    margin-bottom: clamp(10px, 1.5vh, 24px);
 }
 
 .scoreboard-item {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    margin: 5px 0;
+    padding: clamp(8px, 1.4vh, 20px) clamp(12px, 1.5vw, 28px);
+    margin: clamp(4px, 0.7vh, 10px) 0;
     background: white;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: clamp(6px, 0.8vh, 12px);
+    font-size: clamp(16px, 2.2vh, 32px);
 }
 
 .scoreboard-item.winner {
@@ -459,33 +524,26 @@ span.deck-preview-face {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .game-board {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        /* Keep the 20 cards on screen: 4 across, 5 down on narrow screens. */
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: repeat(5, minmax(0, 1fr));
+        gap: clamp(4px, 1vw, 10px);
     }
 }
 
 @media (max-width: 480px) {
-    .game-board {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
-    }
-    
     .card-back {
-        font-size: clamp(18px, 3vw, 24px);
+        font-size: clamp(20px, 6vw, 40px);
     }
-    
+
     .card-front {
-        /* Five columns of a 4/3 card leaves only ~51px of height at 480px and
-           ~35px at 375px, so the old 30px floor was larger than the card. */
-        font-size: clamp(16px, 5vw, 36px);
+        font-size: clamp(18px, 8vw, 48px);
     }
 
     .card-label {
-        /* ~51px of card height, so the name strip has to shrink too or it
-           eats the picture. */
-        font-size: 7px;
-        padding: 0 3px 1px;
+        font-size: clamp(8px, 2.4vw, 14px);
+        padding: 0 2px 1px;
     }
 }

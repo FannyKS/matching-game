@@ -853,7 +853,7 @@ class MatchingGame {
         
         this.scoreboard.innerHTML = html;
         this.scoreboard.classList.remove('hidden');
-        this.showMessage('Game Over! Check the scoreboard below.');
+        this.showMessage('Game Over! Here are the final scores.');
     }
 }
 
